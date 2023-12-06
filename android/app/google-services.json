@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "106565488418",
+    "project_id": "retailpulseajay",
+    "storage_bucket": "retailpulseajay.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106565488418:android:202f3870e2012a3d86df7b",
+        "android_client_info": {
+          "package_name": "com.retailpulseajay"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8ZejTz_LwP9ZQunZlUqrsBvBIoW_klSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

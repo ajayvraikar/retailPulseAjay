@@ -31,6 +31,10 @@
 - Filters to filter the store list, the values can be taken from the store attributes. (Area, Type, Route, etc) dynamic.
 - Upload **image** and **Listing the Uploaded Image for Perticular store**
 
+## Screen Recording
+
+![Screen Recording](src/Assets/Screenshots/WhatsApp%20Video%202023-12-06%20at%2010.37.23%20PM.mp4)
+
 ## Screen shots
 
 ![Login Screen](src/Assets/Screenshots/login.jpeg)

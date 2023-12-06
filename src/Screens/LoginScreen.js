@@ -103,6 +103,7 @@ const LoginScreen = (props) => {
         }}
         title="Password"
         placeholder="Enter Password"
+        secureTextEntry={true}
       />
       {loginFields?.password === "" && loginFieldsErrors.password && (
         <Text style={styles.fieldError}>{loginFieldsErrors.password}</Text>

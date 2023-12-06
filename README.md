@@ -30,3 +30,11 @@
 - **store search feature**
 - Filters to filter the store list, the values can be taken from the store attributes. (Area, Type, Route, etc) dynamic.
 - Upload **image** and **Listing the Uploaded Image for Perticular store**
+
+## Screen shots
+
+![Login Screen](src/Assets/Screenshots/login.jpeg)
+![Store Listing](src/Assets/Screenshots/listing.jpeg)
+![Filter Modal](src/Assets//Screenshots/filter.jpeg)
+![Store Details](src/Assets/Screenshots/details.jpeg)
+![Preview](src/Assets/Screenshots/preview.jpeg)

@@ -185,7 +185,7 @@ const StoreListing = (props) => {
           value={searchValue}
           onChangeText={setSearchValue}
           placeholder="search store name here..."
-          placeholderTextColor={"black"}
+          placeholderTextColor={"gray"}
           style={styles.searchBox}
         />
         <TouchableOpacity

@@ -1,14 +1,16 @@
-import { StyleSheet, Text, ToastAndroid, View } from "react-native";
+import { Image, StyleSheet, Text, ToastAndroid, View } from "react-native";
 import React, { useEffect, useState } from "react";
 import GenericInput from "../Components/GenericInput";
 import GenericButton from "../Components/GenericButton";
 import database from "@react-native-firebase/database";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { CommonActions } from "@react-navigation/native";
+import { APP_LOGO } from "../Assets/Images";
 
 const LoginScreen = (props) => {
   const [loginFields, setLoginFields] = useState({
-    userName: "ajay",
-    password: "pavana",
+    userName: "",
+    password: "",
   });
   const [loginFieldsErrors, setLoginFieldsErrors] = useState({
     userName: "",
@@ -60,7 +62,16 @@ const LoginScreen = (props) => {
             ToastAndroid.LONG,
             ToastAndroid.BOTTOM
           );
-          props.navigation.navigate("StoreListing");
+          props.navigation.dispatch(
+            CommonActions.reset({
+              index: 0,
+              routes: [
+                {
+                  name: "StoreListing",
+                },
+              ],
+            })
+          );
         } else {
           setError("Invalid Password");
         }
@@ -71,6 +82,7 @@ const LoginScreen = (props) => {
   }
   return (
     <View>
+      <Image style={styles.logo} source={APP_LOGO} />
       <Text style={styles.screenTitle}>Welcome to Retail Pulse </Text>
       <GenericInput
         value={loginFields.userName}
@@ -108,8 +120,14 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: "#2faff5",
     fontWeight: "700",
-    marginTop: 100,
     marginBottom: 40,
+    alignSelf: "center",
+  },
+  logo: {
+    height: 100,
+    width: 100,
+    marginTop: 40,
+    marginBottom: 20,
     alignSelf: "center",
   },
   errorTxt: {

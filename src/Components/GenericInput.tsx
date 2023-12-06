@@ -7,8 +7,8 @@ import {
   TextStyle,
   View,
   ViewStyle,
-} from 'react-native';
-import React from 'react';
+} from "react-native";
+import React from "react";
 interface OwnProps {
   title?: string;
   customMainStyle?: ViewStyle;
@@ -22,7 +22,7 @@ const GenericInput: React.FC<CustomInputProps> = ({
   customMainStyle,
   customTextStyle,
   customInputStyle,
-  placeholderTextColor = 'gray',
+  placeholderTextColor = "gray",
   ...restProps
 }) => {
   return (
@@ -45,17 +45,18 @@ const styles = StyleSheet.create({
   mainView: {
     paddingHorizontal: 16,
     marginBottom: 12,
-    width: '90%',
-    alignSelf: 'center',
+    width: "90%",
+    alignSelf: "center",
   },
   titleStyle: {
     fontSize: 14,
-    color: 'black',
-    fontWeight: '500',
+    color: "black",
+    fontWeight: "500",
     marginBottom: 8,
   },
   inputStyle: {
     borderWidth: 0.6,
+    color: "black",
     borderRadius: 8,
     paddingHorizontal: 16,
   },
